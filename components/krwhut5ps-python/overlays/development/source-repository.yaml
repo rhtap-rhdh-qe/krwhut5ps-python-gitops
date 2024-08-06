@@ -1,0 +1,6 @@
+apiVersion: "pipelinesascode.tekton.dev/v1alpha1"
+kind: Repository
+metadata:
+  name: krwhut5ps-python-repository
+spec:
+  url: https://github.com/rhtap-rhdh-qe/krwhut5ps-python

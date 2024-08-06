@@ -1,0 +1,21 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: krwhut5ps-python-gitops
+  description: This is GitOps manifest for krwhut5ps-python   
+  links:
+    - url: https://www.redhat.com/en/solutions/trusted-software-supply-chain
+      title: Trusted Secure Supply Chain 
+      icon: dashboard
+      type: admin-dashboard
+  annotations:    
+    argocd/app-name: krwhut5ps-python
+    janus-idp.io/tekton: krwhut5ps-python
+    backstage.io/kubernetes-id: krwhut5ps-python 
+    backstage.io/techdocs-ref: dir:. 
+spec:
+  type: gitops
+  owner: user:guest 
+  lifecycle: experimental
+  dependsOn:
+    - component:krwhut5ps-python
